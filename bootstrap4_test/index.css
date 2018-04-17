@@ -8,3 +8,10 @@
 #contentsite{
     background-color: cornflowerblue;
 }
+
+.fa-exclamation-triangle {
+    width: 15px;
+    margin: -30px 20px;
+    float: right;
+    font-size: 20px;
+  }
