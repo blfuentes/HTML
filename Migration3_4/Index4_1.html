@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style4_1.css" />
+    <title></title>
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-sm-3'>
+                <div class='main-nav'>
+                    <nav class='navbar navbar-expand-md bg-dark navbar-dark'>
+                        <div class='navbar-header'>
+                            <a class='navbar-brand' [routerLink]="['/home']">NetCoreAngular6</a>
+                            <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='.navbar-collapse'>
+                                <span class='sr-only'>Toggle navigation</span>
+                                <span class='navbar-toggler-icon'></span>
+                            </button>
+                        </div>
+                        <div class='clearfix'></div>
+                        <div class='collapse navbar-collapse'>
+                            <ul class='nav navbar-brand'>
+                                <li [routerLinkActive]="['link-active']">
+                                    <a [routerLink]="['/home']">
+                                        <span class='fa fa-home'></span> Home
+                                    </a>
+                                </li>
+                                <li [routerLinkActive]="['link-active']">
+                                    <a [routerLink]="['/counter']">
+                                        <span class='fa fa-sort-numeric-up'></span> Counter
+                                    </a>
+                                </li>
+                                <li [routerLinkActive]="['link-active']">
+                                    <a [routerLink]="['/fetch-data']">
+                                        <span class='fa fa-download'></span> Fetch data
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class='col-sm-9 body-content'>
+                <h1>----</h1>
+                <p>Welcome to your new single-page application, built with:</p>
+                <ul>
+                    <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
+                    <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for client-side code</li>
+                    <li><a href='https://webpack.github.io/'>Webpack</a> for building and bundling client-side resources</li>
+                    <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+                </ul>
+                <p>To help you get started, we've also set up:</p>
+                <ul>
+                    <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
+                    <li><strong>Server-side prerendering</strong>. For faster initial loading and improved SEO, your Angular app is prerendered on the server. The resulting HTML is then transferred to the browser where a client-side copy of the app takes over.</li>
+                    <li><strong>Webpack dev middleware</strong>. In development mode, there's no need to run the <code>webpack</code> build tool. Your client-side resources are dynamically built on demand. Updates are available as soon as you modify any file.</li>
+                    <li><strong>Hot module replacement</strong>. In development mode, you don't even need to reload the page after making most changes. Within seconds of saving changes to files, your Angular app will be rebuilt and a new instance injected into the page.</li>
+                    <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and the <code>webpack</code> build tool produces minified static CSS and JavaScript files.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
